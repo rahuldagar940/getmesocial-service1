@@ -4,11 +4,13 @@ public class User {
     private String name;
     private String address;
     private int age;
+    private String profilePicURL;
 
-    public User(String name, String address, int age) {
+    public User(String name, String address, int age, String profilePicURL) {
         this.name = name;
         this.address = address;
         this.age = age;
+        this.profilePicURL = profilePicURL;
     }
 
     public String getName() {
@@ -33,5 +35,13 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getProfilePicURL() {
+        return profilePicURL;
+    }
+
+    public void setProfilePicURL(String profilePicURL) {
+        this.profilePicURL = profilePicURL;
     }
 }
